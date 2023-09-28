@@ -1,5 +1,3 @@
-equalSumOfOddAndEvenPositions
-
 function equalSumOfOddAndEvenPositions(start, end) {
     let isMatching = false;
     for (let number = start; number <= end; number++) {
