@@ -1,0 +1,51 @@
+@import url("./css-reset.css");
+@import url("./header.css");
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400;1,500&family=Montserrat:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap");
+
+body {
+  background-color: #21243d;
+  color: #fff;
+  font-family: "Montserrat";
+}
+
+section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 10px 20px;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+button.btn-order {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  padding: 15px 60px;
+  background-color: #21243d;
+  border-radius: 33px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Large devices /desctop, laptop/ */
+@media screen and (max-width:992px) {
+  section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}

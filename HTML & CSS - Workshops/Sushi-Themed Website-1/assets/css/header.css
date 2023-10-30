@@ -1,0 +1,82 @@
+header div.container.nav-container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo-wrapper,
+header nav,
+header .search-wrapper {
+  flex-grow: 1;
+}
+
+header .logo-wrapper a {
+  font-size: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .logo-wrapper a span {
+  color: #f1ff2d;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul a {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+header .search-wrapper {
+  text-align: end;
+  font-size: 25px;
+}
+
+header .search-wrapper i {
+  cursor: pointer;
+}
+
+header .banner-bg {
+  background-image: url("../images/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header .banner-bg div.container.banner {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+
+header .banner-bg div.container.banner h1 {
+  font-size: 92px;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+
+header .banner-bg div.container.banner p {
+  font-size: 30px;
+  font-weight: 400;
+  max-width: 50%;
+  margin-bottom: 50px;
+}
+
+.mobile-nav{
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+.mobile-nav span{
+  background-color: #fff;
+  width: 50px;
+  height: 5px;
+  margin-bottom: 10px;
+  display: block;
+}
