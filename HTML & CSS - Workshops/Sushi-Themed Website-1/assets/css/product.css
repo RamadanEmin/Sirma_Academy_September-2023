@@ -31,3 +31,33 @@
   font-weight: 400;
   margin-bottom: 70px;
 }
+
+/* Large devices /desctop, laptop/ */
+@media screen and (max-width: 992px) {
+  .product {
+    text-align: center;
+  }
+
+  .product .container {
+    flex-direction: column;
+  }
+
+  .product .image-wrapper,
+  .product .content-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .product .image-wrapper img {
+    max-width: unset;
+  }
+
+  .product .content-wrapper h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  .product .content-wrapper p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+}

@@ -66,3 +66,40 @@ footer .site-map ul.helper-links li a {
   text-align: center;
   padding: 10px;
 }
+
+/* Extra small devices /desctop, smartwatch/ */
+@media screen and (max-width: 600px) {
+}
+
+/* Medium devices /horizontal tablet, small laptop/ */
+@media screen and (max-width: 768px) {
+  footer {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  footer .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  footer .footer-content {
+    margin-right: unset;
+  }
+
+  ul.sosial-links{
+    justify-content: center;
+  }
+
+  .copyright{
+    margin-top: 40px;
+  }
+}
+
+/* Large devices /desctop, laptop/ */
+@media screen and (max-width: 992px) {
+}
+
+/* Extra large devices /desctop, large laptop/ */
+@media screen and(max-width:1200px) {
+}

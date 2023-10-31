@@ -40,3 +40,23 @@ font-size: 17px;
 color: #ffffff;
 font-weight: 400;
 }
+
+/* Large devices /desctop, laptop/ */
+@media screen and (max-width:992px) {
+  #popular h2 {
+    font-size: 47px;
+  }
+
+  #popular > p{
+    font-size: 18px;
+    max-width: unset;
+  }
+
+  #popular .menu-item h3{
+    font-size: 24px;
+  }
+
+  #popular .menu-item p{
+    font-size: 16px;
+  }
+}

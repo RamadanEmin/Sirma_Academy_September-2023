@@ -42,3 +42,44 @@
     border: 5px solid white;
     margin: 0 auto;
 }
+
+/* Extra small devices /desctop, smartwatch/ */
+@media screen and (max-width:600px) {
+}
+
+/* Medium devices /horizontal tablet, small laptop/ */
+@media screen and (max-width:768px) {
+  
+}
+
+/* Large devices /desctop, laptop/ */
+@media screen and (max-width:992px) {
+  #metrics h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  #metrics > p{
+    font-size: 18px;
+    max-width: unset;
+    margin: 20px auto;
+  }
+
+  #metrics .statistics-item p{
+    font-size: 22px;
+  }
+
+  #metrics .statistics-item p span{
+    font-size: 38px;
+  }
+
+  #metrics .statistics-item>div{
+    width: 200px;
+    height: 200px;
+  }
+  
+}
+
+/* Extra large devices /desctop, large laptop/ */
+@media screen and(max-width:1200px) {
+}

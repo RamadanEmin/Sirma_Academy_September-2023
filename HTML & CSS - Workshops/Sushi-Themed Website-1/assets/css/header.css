@@ -80,3 +80,64 @@ header .banner-bg div.container.banner p {
   margin-bottom: 10px;
   display: block;
 }
+
+/* Extra small devices /desctop, smartwatch/ */
+@media screen and (max-width:600px) {
+  header nav,
+  header .search-wrapper {
+    display: none;
+  }
+
+  .mobile-nav{
+    display: block;
+  }
+
+  header .logo-wrapper a{
+    font-size: 20px;
+  }
+
+  header .banner-bg div.container.banner h1{
+    font-size: 46px;
+  }
+
+  header .banner-bg div.container.banner p{
+    font-size: 16px;
+    max-width: unset;
+  }
+}
+
+/* Large devices /desctop, laptop/ */
+@media screen and (max-width:992px) {
+  header .banner-bg div.container.banner{
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  header div.container.banner{
+    align-items: center;
+    justify-content: center;
+  }
+
+  header div.container.banner>div{
+    text-align: center;
+  }
+
+  header nav,
+  header .search-wrapper {
+    display: none;
+  }
+
+  .mobile-nav{
+    display: block;
+  }
+
+
+  header .banner-bg div.container.banner h1{
+    font-size: 68px;
+  }
+
+  header .banner-bg div.container.banner p{
+    font-size: 16px;
+    max-width: unset;
+  }
+}

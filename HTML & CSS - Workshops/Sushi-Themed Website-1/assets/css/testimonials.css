@@ -38,3 +38,30 @@
   font-size: 45px;
   font-weight: 700;
 }
+
+/* Extra small devices /desctop, smartwatch/ */
+@media screen and (max-width:600px) {
+  #testimonials .container div img{
+    width: 200px;
+  }
+}
+
+/* Medium devices /horizontal tablet, small laptop/ */
+@media screen and (max-width:768px) {
+  #testimonials .container p{
+    font-size: 22px;
+  }
+
+  #testimonials .container h3{
+    font-size: 28px;
+  }
+}
+
+/* Large devices /desctop, laptop/ */
+@media screen and (max-width:992px) {
+
+}
+
+/* Extra large devices /desctop, large laptop/ */
+@media screen and(max-width:1200px) {
+}
