@@ -3,6 +3,7 @@
 @import url("./popular.css");
 @import url("./product.css");
 @import url("./metrics.css");
+@import url("./testimonials.css");
 
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400;1,500&family=Montserrat:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap");
 
@@ -43,12 +44,4 @@ button.btn-order {
   border-radius: 33px;
   border: none;
   cursor: pointer;
-}
-
-/* Large devices /desctop, laptop/ */
-@media screen and (max-width:992px) {
-  section{
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
 }
