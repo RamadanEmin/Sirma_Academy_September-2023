@@ -7,6 +7,7 @@
 @import url("sections/popular.css");
 @import url("sections/trending.css");
 @import url("sections/subscribe.css");
+@import url("sections/footer.css");
 
 :root {
   --playfair-display: "Playfair Display", serif;
