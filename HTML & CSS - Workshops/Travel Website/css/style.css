@@ -1,6 +1,7 @@
 @import url("./sections/header.css");
 @import url("./sections/hero.css");
 @import url("./sections/popular.css");
+@import url("./sections/package.css");
 
 :root {
   /* colors */
@@ -178,4 +179,9 @@ body {
 .section-text {
   color: var(--black-coral);
   margin-bottom: 30px;
+}
+
+.card-text {
+  color: var(--black-coral);
+  font-size: var(--fs-5);
 }
