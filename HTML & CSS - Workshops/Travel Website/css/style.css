@@ -1,5 +1,6 @@
 @import url("./sections/header.css");
 @import url("./sections/hero.css");
+@import url("./sections/popular.css");
 
 :root {
   /* colors */
@@ -160,4 +161,21 @@ body {
 .h3 {
   font-size: var(--fs-3);
   font-weight: var(--fw-700);
+}
+
+.section-subtitle {
+  color: var(--bright-navy-blue);
+  font-size: var(--fs-5);
+  text-transform: uppercase;
+  font-family: var(--ff-montserrat);
+  margin-bottom: 8px;
+}
+
+.section-title {
+  margin-bottom: 15px;
+}
+
+.section-text {
+  color: var(--black-coral);
+  margin-bottom: 30px;
 }
