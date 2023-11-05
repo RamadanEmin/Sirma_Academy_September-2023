@@ -3,6 +3,7 @@
 @import url("./sections/popular.css");
 @import url("./sections/package.css");
 @import url("./sections/gallery.css");
+@import url("./sections/cta.css");
 
 :root {
   /* colors */
