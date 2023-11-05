@@ -2,6 +2,7 @@
 @import url("./sections/hero.css");
 @import url("./sections/popular.css");
 @import url("./sections/package.css");
+@import url("./sections/gallery.css");
 
 :root {
   /* colors */
