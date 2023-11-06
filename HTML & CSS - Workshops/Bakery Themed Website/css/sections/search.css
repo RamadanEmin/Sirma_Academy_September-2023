@@ -1,0 +1,34 @@
+.header .search-form {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 115%;
+    right: -100%;
+    width: 45rem;
+    height: 4.5rem;
+    background-color: #fff;
+}
+
+.header .search-form.active {
+    right: 7%;
+}
+
+.header .search-form input {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.header .search-form label {
+    color: var(--black);
+    font-size: 2rem;
+    padding: 1.3rem;
+    cursor: pointer;
+}
+
+.header .search-form label:hover {
+    color: var(--main-color);
+}
