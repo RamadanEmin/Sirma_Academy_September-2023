@@ -220,6 +220,7 @@ body {
 }
 
 /* MEDIA QUERIES */
+
 @media screen and (min-width: 580px) {
   .container {
     max-width: 580px;
@@ -331,5 +332,130 @@ body {
 
   .footer-bottom-list {
     justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --fs-5: 15px;
+  }
+
+  .container {
+    max-width: 800px;
+  }
+
+  .section-text {
+    min-width: 60ch;
+    margin-inline: auto;
+  }
+
+  /* HEADER */
+  .helpline-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .helpline-box .wrapper {
+    display: block;
+    color: var(--white);
+    font-size: var(--fs-6);
+  }
+
+  .social-list {
+    gap: 10px;
+  }
+
+  /* POPULAR */
+  .popular-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .popular-list > li:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .popular-card .card-content {
+    right: 20px;
+  }
+
+  /* PACKAGE */
+  .package-list {
+    margin-bottom: 50px;
+  }
+
+  .package-list > li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .package-card {
+    display: grid;
+    grid-template-columns: 1.3fr 1.5fr 1fr;
+  }
+
+  .package-card .card-banner {
+    height: 100%;
+  }
+
+  .package-card .card-content {
+    padding: 40px;
+  }
+
+  .package-card .card-price {
+    display: grid;
+    place-content: center;
+  }
+
+  .package-card .card-price .wrapper {
+    margin-bottom: 15px;
+  }
+
+  /* GALLERY */
+  .gallery {
+    padding-bottom: calc(var(--section-padding * 2));
+  }
+
+  .gallery-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallery-image {
+    border-radius: var(--radius-25);
+  }
+
+  /* CTA */
+  .cta .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cta-content {
+    width: calc(100% - 225px);
+  }
+
+  .cta .section-text {
+    margin-inline: 0;
+  }
+
+  /* FOOTER */
+  .form-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-form .input-field {
+    margin-bottom: 0;
+  }
+
+  .footer-form .btn {
+    width: max-content;
   }
 }
