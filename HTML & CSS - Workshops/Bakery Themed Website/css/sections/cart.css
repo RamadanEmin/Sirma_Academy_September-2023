@@ -1,0 +1,55 @@
+.header .cart-items-container {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 35rem;
+    background-color: #fff;
+    height: 80vh;
+    border: 1px solid black;
+    padding: 0.8rem;
+}
+
+.header .cart-items-container.active {
+    right: 0;
+}
+
+.header .cart-items-container .cart-item {
+    display: flex;
+    align-items: center;
+    margin: 2.5rem 0;
+    position: relative;
+    gap: 1rem;
+}
+
+.header .cart-items-container .cart-item img {
+    width: 10rem;
+}
+
+.header .cart-items-container a {
+    width: 100%;
+    text-align: center;
+}
+
+.header .cart-items-container .cart-item span {
+    position: absolute;
+    top: 5%;
+    right: 4%;
+    font-size: 2rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.header .cart-items-container .cart-item span:hover {
+    color: red;
+}
+
+.header .cart-items-container .cart-item .content h3 {
+    font-size: 1.5rem;
+    color: var(--black);
+    padding-bottom: 0.8rem;
+}
+
+.header .cart-items-container .cart-item .content .price {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}

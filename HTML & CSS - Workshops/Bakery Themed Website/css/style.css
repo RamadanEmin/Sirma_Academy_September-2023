@@ -1,5 +1,6 @@
 @import url("./sections/header.css");
 @import url("./sections/search.css");
+@import url("./sections/cart.css");
 
 :root {
     --main-color: #00c9a5;
@@ -36,4 +37,18 @@ body {
 
 section {
     padding: 2rem 7%;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 0.8rem 2.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: 0.2rem;
 }
