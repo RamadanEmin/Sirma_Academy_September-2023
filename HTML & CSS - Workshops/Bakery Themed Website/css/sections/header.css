@@ -1,0 +1,51 @@
+.header {
+    background-color: var(--nav-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    /* z-index: 1000; */
+}
+
+.header .logo img {
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.header .navbar a {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover {
+    color: var(--black);
+    border-top: 0.3rem solid var(--black);
+    border-bottom: 0.3rem solid var(--black);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.header .icons {
+    display: flex;
+}
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover {
+    color: var(--black);
+}
+
+.header .icons .menu-icon {
+    display: none;
+}

@@ -1,3 +1,5 @@
+@import url("./sections/header.css");
+
 :root {
     --main-color: #00c9a5;
     --nav-color: #00afa5;
@@ -19,6 +21,7 @@
     text-transform: capitalize;
     transition: all 0.5s ease-in;
     scroll-behavior: smooth;
+    scroll-padding-top: 10vh;
 }
 
 html {
@@ -28,4 +31,8 @@ html {
 
 body {
     background-color: var(--bg-color);
+}
+
+section {
+    padding: 2rem 7%;
 }
