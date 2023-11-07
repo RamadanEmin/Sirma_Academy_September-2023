@@ -1,0 +1,29 @@
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    margin-top: 10vh;
+    background-color: blue;
+    background-image: url("../../images/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.home .hero {
+    width: 60rem;
+}
+
+.home .hero h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .hero p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 3.2 rem;
+    padding: 1rem 0;
+    color: #eee;
+}

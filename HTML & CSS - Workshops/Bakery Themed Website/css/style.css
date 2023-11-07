@@ -1,6 +1,7 @@
 @import url("./sections/header.css");
 @import url("./sections/search.css");
 @import url("./sections/cart.css");
+@import url("./sections/home.css");
 
 :root {
     --main-color: #00c9a5;
