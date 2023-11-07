@@ -1,0 +1,45 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.cakes .wrapper .cake-card {
+    background-color: var(--card-color);
+    padding: 3rem 2rem;
+    text-align: center;
+    transform-origin: top center;
+}
+
+.cakes .wrapper .cake-card:hover {
+    transform: scaleY(1.1);
+    background-color: var(--black);
+}
+
+.cakes .wrapper .cake-card:hover *:not(a) {
+    color: var(--main-color);
+}
+
+.cakes .wrapper .cake-card img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.cakes .wrapper .cake-card h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.cakes .wrapper .cake-card .price {
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+}
+
+.cakes .wrapper .cake-card .price span {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}

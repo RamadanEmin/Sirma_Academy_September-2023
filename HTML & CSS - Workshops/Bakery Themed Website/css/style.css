@@ -2,6 +2,7 @@
 @import url("./sections/search.css");
 @import url("./sections/cart.css");
 @import url("./sections/home.css");
+@import url("./sections/cakes.css");
 
 :root {
     --main-color: #00c9a5;
@@ -52,4 +53,18 @@ section {
 
 .btn:hover {
     letter-spacing: 0.2rem;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 3.5rem 0;
+    font-size: 4rem;
+    text-shadow: 2px 2px 0 var(--card-color), -2px -2px 0 var(--card-color), -2px 2px 0 var(--card-color), 2px -2px 0 var(--card-color);
+}
+
+.title span {
+    color: var(--main-color);
+    text-transform: uppercase;
 }
