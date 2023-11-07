@@ -3,6 +3,7 @@
 @import url("./sections/cart.css");
 @import url("./sections/home.css");
 @import url("./sections/cakes.css");
+@import url("./sections/cheesecakes.css");
 
 :root {
     --main-color: #00c9a5;

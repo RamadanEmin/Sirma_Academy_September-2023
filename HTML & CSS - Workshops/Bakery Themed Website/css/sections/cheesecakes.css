@@ -1,0 +1,61 @@
+.cheesecakes .wrapper .cheese-card {
+    text-align: center;
+    background-color: #eac7c7;
+    padding: 2rem;
+    border: var(--border);
+}
+
+.cheesecakes .wrapper .cheese-card:hover {
+    box-shadow: var(--box-shadow)
+}
+
+.cheesecakes .wrapper .cheese-card .icons a {
+    border: var(--border);
+    height: 5rem;
+    width: 5rem;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 5rem;
+    margin: 0.3rem;
+}
+
+.cheesecakes .wrapper .cheese-card .icons a:hover {
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow);
+}
+
+.cheesecakes .wrapper .cheese-card .img {
+    padding: 2.5rem 0;
+}
+
+.cheesecakes .wrapper .cheese-card .img img {
+    height: 20rem;
+    width: 30rem;
+    object-fit: cover;
+}
+
+.cheesecakes .wrapper .cheese-card .content h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+
+.cheesecakes .wrapper .cheese-card .content .stars {
+    padding: 1.8rem;
+}
+
+.cheesecakes .wrapper .cheese-card .content .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.cheesecakes .wrapper .cheese-card .content .price {
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.cheesecakes .wrapper .cheese-card .content .price span {
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: line-through;
+}
