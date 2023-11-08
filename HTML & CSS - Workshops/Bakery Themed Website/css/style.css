@@ -8,6 +8,7 @@
 @import url("./sections/about_us.css");
 @import url("./sections/review.css");
 @import url("./sections/contact_us.css");
+@import url("./sections/footer.css");
 
 :root {
     --main-color: #00c9a5;
