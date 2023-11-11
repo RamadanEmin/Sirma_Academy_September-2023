@@ -6,8 +6,10 @@
     --color-gray: hsl(252, 15%, 65%);
     --color-primary: hsl(252, 75%, 60%);
     --color-success: hsl(120, 95%, 65%);
+    --color-success: hsl(120, 95%, 65%);
     --color-danger: hsl(0, 95%, 65%);
     --color-dark: hsl(252, 30%, 17%);
+    --color-black: hsl(252, 30%, 10%);
 
     --border-radius: 2rem;
     --card-border-radius: 1rem;
@@ -518,4 +520,28 @@ main .container .right {
 .right .request .action {
     display: flex;
     gap: 1rem;
+}
+
+/* THEME CUSTOMIZATION */
+.customize-theme {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.customize-theme .card {
+    background: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 50%;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
