@@ -5,6 +5,8 @@ const messages = document.querySelector('.messages');
 const message = messages.querySelectorAll('.message');
 const messageSearch = document.querySelector('#message-search');
 
+const theme = document.querySelector('#theme');
+const themeModal = document.querySelector('.customize-theme');
 
 // SIDEBAR
 const changeActiveItem = () => {
@@ -52,3 +54,19 @@ const searchMessage = () => {
 };
 
 messageSearch.addEventListener('keyup', searchMessage);
+
+// THEME CUSTOMIZATION DISPLAY
+const openThemeModal = () => {
+    themeModal.style.display = 'grid';
+};
+
+const closeThemeModal = (e) => {
+    if (e.target.classList.contains('customize-theme')) {
+        themeModal.style.display = 'none';
+    }
+};
+
+themeModal.addEventListener('click', closeThemeModal);
+
+
+theme.addEventListener('click', openThemeModal);
