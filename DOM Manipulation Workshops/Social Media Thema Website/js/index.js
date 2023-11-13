@@ -13,6 +13,10 @@ const root = document.querySelector(':root');
 
 const colorPalette = document.querySelectorAll('.choose-color span');
 
+const bg1 = document.querySelector('.bg-1');
+const bg2 = document.querySelector('.bg-2');
+const bg3 = document.querySelector('.bg-3');
+
 // SIDEBAR
 const changeActiveItem = () => {
     menuItems.forEach(item => {
@@ -137,4 +141,48 @@ colorPalette.forEach((color) => {
 		color.classList.add('active');
 		root.style.setProperty('--primary-color-hue', primaryHue);
 	});
+});
+
+// CHANGE BACKGROUND
+let lightColorLightness;
+let whiteColorLightness;
+let darkColorLightness;
+
+const changeBackground = () => {
+	root.style.setProperty('--white-color-lightness', whiteColorLightness);
+	root.style.setProperty('--light-color-lightness', lightColorLightness);
+	root.style.setProperty('--dark-color-lightness', darkColorLightness);
+};
+
+bg1.addEventListener('click', () => {
+	bg1.classList.add('active');
+
+	bg2.classList.remove('active');
+	bg3.classList.remove('active');
+
+	window.location.reload();
+});
+
+bg2.addEventListener('click', () => {
+	whiteColorLightness = '20%';
+	lightColorLightness = '15%';
+	darkColorLightness = '95%';
+
+	bg2.classList.add('active');
+
+	bg1.classList.remove('active');
+	bg3.classList.remove('active');
+	changeBackground();
+});
+
+bg3.addEventListener('click', () => {
+	whiteColorLightness = '10%';
+	lightColorLightness = '0%';
+	darkColorLightness = '95%';
+
+	bg2.classList.add('active');
+
+	bg1.classList.remove('active');
+	bg2.classList.remove('active');
+	changeBackground();
 });
