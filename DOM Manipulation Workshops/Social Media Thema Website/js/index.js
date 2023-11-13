@@ -8,6 +8,9 @@ const messageSearch = document.querySelector('#message-search');
 const theme = document.querySelector('#theme');
 const themeModal = document.querySelector('.customize-theme');
 
+const fontSizes = document.querySelectorAll('.choose-size span');
+const root = document.querySelector(':root');
+
 // SIDEBAR
 const changeActiveItem = () => {
     menuItems.forEach(item => {
@@ -70,3 +73,38 @@ themeModal.addEventListener('click', closeThemeModal);
 
 
 theme.addEventListener('click', openThemeModal);
+
+// FONT SIZES
+const removeSizeSelector = () => {
+    fontSizes.forEach(size => {
+        size.classList.remove('active');
+    });
+};
+
+fontSizes.forEach(size => {
+    size.addEventListener('click', () => {
+        removeSizeSelector();
+
+        let fontSize;
+        size.classList.toggle('active');
+
+        if (size.classList.contains('font-size-1')) {
+            fontSize = '10px';
+            root.style.setProperty('--sticky-top-right', '5.4rem');
+        } else if (size.classList.contains('font-size-2')) {
+            fontSize = '13px';
+            root.style.setProperty('--sticky-top-right', '-7rem');
+        } else if (size.classList.contains('font-size-3')) {
+            fontSize = '16px';
+            root.style.setProperty('--sticky-top-right', '-17rem');
+        } else if (size.classList.contains('font-size-4')) {
+            fontSize = '19px';
+            root.style.setProperty('--sticky-top-right', '-25rem');
+        } else if (size.classList.contains('font-size-5')) {
+            fontSize = '22px';
+            root.style.setProperty('--sticky-top-right', '-33rem');
+        }
+
+        document.querySelector('html').style.fontSize = fontSize;
+    });
+});
