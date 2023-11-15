@@ -106,3 +106,52 @@ section {
         color: var(--text-color);
     }
 }
+
+@media (max-width:768px) {
+    header .nav .search-box input {
+        padding: 15px;
+    }
+
+    header .nav {
+        padding: 10px 0px;
+    }
+
+    header .nav #menu-icon {
+        display: initial;
+    }
+
+    header .nav .navbar {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        row-gap: 0.5rem;
+        text-align: center;
+        box-shadow: 4px 4px 20px rgb(15 54 55 / 20%);
+        clip-path: circle(0% at 0% 0%);
+        transition: 0.6s;
+    }
+
+    header .nav .navbar a {
+        display: block;
+        padding: 15px;
+    }
+
+    header .nav .navbar a:hover,
+    header .nav .navbar a.active {
+        border-bottom: none;
+        background: var(--main-color);
+        color: var(--bg-color);
+    }
+
+    header .nav .navbar.active {
+        clip-path: circle(144% at 0% 0%);
+    }
+
+    .blog .blog-container .box {
+        padding: 4px;
+    }
+}
