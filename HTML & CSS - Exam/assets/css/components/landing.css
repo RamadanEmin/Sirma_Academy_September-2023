@@ -1,0 +1,41 @@
+section.landing {
+    width: 100%;
+    background-image: url("../../img/landing/background.png");
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+section.landing .section-header {
+    width: 732px;
+    padding: 230px 0 198px 0;
+    position: relative;
+    left: -25px
+}
+
+section.landing .title {
+    margin: 0;
+    width: 100%;
+    font-size: 134px;
+    font-weight: bold;
+    font-family: "Aleo", serif;
+    color: #fff
+}
+
+section.landing .action {
+    padding: 14px 34px;
+    background: #1b6ec7;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 33px;
+    transition: .3s
+}
+
+section.landing .action:hover {
+    background: rgba(27, 110, 199, .5)
+}

@@ -2,7 +2,7 @@
 @import"https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=Montserrat:wght@400;700&display=swap";
 
 @import "./components/header.css";
-
+@import "./components/landing.css";
 
 body {
     font-family: "Montserrat", sans-serif;
