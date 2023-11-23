@@ -3,6 +3,7 @@
 
 @import "./components/header.css";
 @import "./components/landing.css";
+@import "./components/favorite.css";
 
 body {
     font-family: "Montserrat", sans-serif;
