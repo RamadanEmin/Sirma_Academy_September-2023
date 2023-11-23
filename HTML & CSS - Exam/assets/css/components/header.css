@@ -1,0 +1,67 @@
+header.main-header {
+    padding: 38px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10
+}
+
+header.main-header .holder .burger {
+    display: none
+}
+
+header.main-header .container {
+    display: flex
+}
+
+header.main-header .logo {
+    display: flex
+}
+
+header.main-header .main-navigation {
+    display: flex;
+    margin-left: 168px
+}
+
+header.main-header .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -8px
+}
+
+header.main-header .menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    color: #fff
+}
+
+header.main-header .menu-item.active a::after {
+    width: 100%
+}
+
+header.main-header .menu-item:hover a::after {
+    width: 100%
+}
+
+header.main-header a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 20px
+}
+
+header.main-header a::after {
+    content: "";
+    position: relative;
+    top: 8px;
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #b2fcff;
+    transition: width .3s
+}

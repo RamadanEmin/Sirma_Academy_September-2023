@@ -1,0 +1,26 @@
+@import"./reset.css";
+@import"https://fonts.googleapis.com/css2?family=Aleo:wght@700&family=Montserrat:wght@400;700&display=swap";
+
+@import "./components/header.css";
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    background: #111
+}
+
+.content {
+    position: relative
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto
+}
+
+section {
+    overflow: hidden
+}
