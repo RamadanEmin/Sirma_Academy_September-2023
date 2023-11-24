@@ -7,6 +7,7 @@
 @import "./components/information.css";
 @import "./components/statistics.css";
 @import "./components/quote.css";
+@import "./components/subscribe.css";
 
 body {
     font-family: "Montserrat", sans-serif;

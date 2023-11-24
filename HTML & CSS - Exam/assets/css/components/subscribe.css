@@ -1,0 +1,139 @@
+section.subscribe {
+    background: #ffeedc
+}
+
+section.subscribe .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 285px
+}
+
+section.subscribe .section-header {
+    padding-top: 196px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+section.subscribe .section-header .title {
+    margin: 0;
+    font-family: "Aleo", serif;
+    color: #4d80e4;
+    font-size: 52.5px
+}
+
+section.subscribe .section-header .subtitle {
+    margin: 36px 0 0 0;
+    font-size: 25px;
+    color: #1a1a1a;
+    width: 669px;
+    text-align: center
+}
+
+section.subscribe .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 659px
+}
+
+section.subscribe .subscription-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 104px;
+    background: #fff;
+    border-radius: 32px;
+    z-index: 2
+}
+
+section.subscribe .subscription-input .button {
+    background: #4d80e4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    transition: .3s;
+    color: #fff
+}
+
+section.subscribe .subscription-input .button:hover {
+    background: rgba(77, 128, 228, .3)
+}
+
+section.subscribe .subscription-input .button:hover button {
+    color: #4d80e4
+}
+
+section.subscribe .subscription-input .button button {
+    cursor: pointer;
+    margin: 0;
+    padding: 19px 40px;
+    font-size: 23.5px;
+    font-weight: bold;
+    color: inherit;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase
+}
+
+section.subscribe .subscription-input .input {
+    width: calc(100% - 222px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+section.subscribe .subscription-input .input input {
+    width: 100%;
+    height: 100%;
+    background: none;
+    padding: 0 0 0 29px;
+    margin: 0;
+    border: none;
+    font-size: 25px;
+    color: rgba(0, 0, 0, .5)
+}
+
+section.subscribe .subscription-input .input input:focus {
+    outline: none
+}
+
+section.subscribe .elements {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
+
+section.subscribe .elements .shape-one {
+    position: absolute;
+    top: 80px;
+    right: -97px
+}
+
+section.subscribe .elements .shape-two {
+    position: absolute;
+    bottom: 85px;
+    left: -15px
+}
+
+section.subscribe .elements .shape-three {
+    position: absolute;
+    bottom: 57px;
+    right: -24px
+}
+
+section.subscribe .elements .shape-four {
+    position: absolute;
+    top: 147px;
+    left: -67px
+}
