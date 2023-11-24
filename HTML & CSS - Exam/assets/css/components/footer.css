@@ -1,0 +1,98 @@
+footer.main-footer {
+    padding: 199px 0 252px 0
+}
+
+footer.main-footer .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between
+}
+
+footer.main-footer .title {
+    font-size: 25px;
+    margin: 0;
+    line-height: 1.24;
+    color: #fff
+}
+
+footer.main-footer .information {
+    width: 358px
+}
+
+footer.main-footer .navigation {
+    width: 281px
+}
+
+footer.main-footer .contact {
+    width: 349px
+}
+
+footer.main-footer .description {
+    margin: 19px 0 0 0;
+    font-size: 18px;
+    line-height: 1.72;
+    color: #fff
+}
+
+footer.main-footer .nav-list {
+    margin: 19px 0 0 30px;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 1.72;
+    color: #fff
+}
+
+footer.main-footer .nav-list .nav-item:hover a {
+    text-decoration: underline
+}
+
+footer.main-footer .nav-list a {
+    text-decoration: none;
+    color: inherit
+}
+
+footer.main-footer .contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 14px 0 0 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column
+}
+
+footer.main-footer .contact-info .contact-info-item {
+    display: flex;
+    font-size: 18px;
+    line-height: 1.72;
+    color: #fff;
+    margin: 5px 0
+}
+
+footer.main-footer .contact-info .contact-info-item:hover a {
+    text-decoration: underline
+}
+
+footer.main-footer .contact-info .contact-info-item a {
+    text-decoration: none;
+    color: inherit
+}
+
+footer.main-footer .contact-info .contact-info-item .text {
+    margin-left: 7px
+}
+
+footer.main-footer .contact-location {
+    margin-top: 16px;
+    width: 100%;
+    height: 138px
+}
+
+footer.main-footer .contact-location img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
