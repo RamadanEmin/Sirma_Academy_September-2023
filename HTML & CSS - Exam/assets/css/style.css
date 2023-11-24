@@ -10,6 +10,7 @@
 @import "./components/subscribe.css";
 @import "./components/footer.css";
 
+
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: normal;
@@ -29,4 +30,196 @@ body {
 
 section {
     overflow: hidden
+}
+
+@media(min-width: 320px)and (max-width: 1109px) {
+    .container {
+        width: calc(100% - 40px)
+    }
+
+    .content {
+        overflow: hidden
+    }
+
+    section.statistics .counter-list {
+        flex-direction: column
+    }
+
+    section.statistics .counter-list .counter-item {
+        margin: 30px 0
+    }
+
+    footer.main-footer {
+        padding: 100px 0
+    }
+
+    footer.main-footer .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start
+    }
+
+    footer.main-footer .navigation,
+    footer.main-footer .contact,
+    footer.main-footer .information {
+        width: 100%
+    }
+
+    footer.main-footer .navigation,
+    footer.main-footer .contact {
+        margin-top: 20px
+    }
+}
+
+@media(min-width: 320px)and (max-width: 1199px) {
+    section.landing .section-header {
+        left: 0
+    }
+}
+
+@media(min-width: 320px)and (max-width: 949px) {
+    header.main-header .container {
+        flex-direction: column
+    }
+
+    header.main-header .holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between
+    }
+
+    header.main-header .holder .burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0
+    }
+
+    header.main-header .main-navigation {
+        display: none;
+        margin: 0;
+        background: #111
+    }
+
+    header.main-header .main-navigation .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%
+    }
+
+    header.main-header .main-navigation .menu .menu-item {
+        margin: 20px 0
+    }
+
+    section.landing .section-header {
+        width: 100%
+    }
+
+    section.landing .title {
+        font-size: 70px
+    }
+
+    section.landing .action {
+        font-size: 15px;
+        padding: 9px 21px
+    }
+
+    section.favourite .section-header .title {
+        font-size: 50px
+    }
+
+    section.favourite .section-header .subtitle {
+        font-size: 18px;
+        width: 100%
+    }
+
+    .cards-list {
+        flex-direction: column
+    }
+
+    .cards-list .card {
+        width: 100%;
+        margin: 20px 0
+    }
+
+    section.information .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column
+    }
+
+    section.information .information {
+        margin: 50px 0 0 0
+    }
+
+    section.information .information .title {
+        margin: 0;
+        text-align: center
+    }
+
+    .elements {
+        display: none !important
+    }
+
+    section.information.bottom .image {
+        margin: 50px 0 0 0
+    }
+
+    section.information.bottom .information {
+        left: 0;
+        width: 100%;
+        margin-top: 0
+    }
+
+    section.information .container {
+        padding: 100px 0
+    }
+
+    section.information.bottom .container {
+        padding: 100px 0
+    }
+
+    section.information .information .title {
+        font-size: 40px
+    }
+
+    section.statistics {
+        padding-bottom: 100px
+    }
+
+    section.statistics .section-header .title {
+        font-size: 50px
+    }
+
+    section.quote {
+        font-size: 25px
+    }
+
+    section.subscribe .form,
+    section.subscribe .section-header .subtitle {
+        width: 100%
+    }
+
+    section.subscribe .section-header .subtitle {
+        font-size: 20px
+    }
+
+    section.subscribe .section-header .title {
+        text-align: center;
+        font-size: 30px
+    }
+
+    section.subscribe .container {
+        padding-bottom: 100px
+    }
+
+    section.subscribe .section-header {
+        padding-top: 100px
+    }
 }
