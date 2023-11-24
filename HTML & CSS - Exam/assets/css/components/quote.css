@@ -1,0 +1,30 @@
+section.quote {
+    width: 100%;
+    height: 796px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("../../img/quote/burger-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 36.5px;
+    font-weight: bold;
+    color: #fff
+}
+
+section.quote .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+section.quote q:before,
+section.quote q:after {
+    content: ""
+}
+
+section.quote .text {
+    text-align: center
+}
