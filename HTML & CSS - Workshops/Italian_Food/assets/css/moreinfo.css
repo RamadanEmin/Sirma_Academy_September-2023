@@ -1,0 +1,45 @@
+#moreinfo {
+  padding: 108px 27px 17px 0;
+  background-color: #27292c;
+  overflow: hidden;
+}
+
+#moreinfo h2 {
+  font-size: 75px;
+  line-height: 52px;
+  color: #ffffff;
+  font-family: "Reey";
+  text-align: center;
+}
+
+#moreinfo p {
+  padding: 20px 0 20px 0;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 490px;
+}
+
+.text-wrapper {
+  margin: 31px 125px 40px 144px;
+  flex: 1 1 100%;
+  display: flex;
+  gap: 65px;
+  justify-content: space-between;
+}
+
+.btn-more-info {
+  background-color: #e8e8e8;
+  font-size: 26px;
+  color: #27292c;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 17px 55px 17px 55px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
