@@ -3,6 +3,7 @@
 @import url("./items.css");
 @import url("./moreinfo.css");
 @import url("./discount.css");
+@import url("./pizza.css");
 
 body {
   overflow-x: hidden;
