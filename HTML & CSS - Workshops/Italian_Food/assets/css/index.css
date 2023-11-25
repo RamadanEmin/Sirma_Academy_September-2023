@@ -41,3 +41,134 @@ body {
   font-family: "Open Sans";
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1230px) {
+  .spaghetti-image {
+    display: none;
+  }
+
+  .souse-image {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+
+  .leafs-left,
+  .leafs-right {
+    display: none;
+  }
+
+  .footer-item-title {
+    flex: 4 1 100%;
+    padding-bottom: 20px;
+  }
+
+  .discount-items {
+    gap: 40px;
+  }
+
+  .discount-items:last-child img {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 1152px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .pizza-image {
+    width: 700px;
+  }
+
+  .pizza-slice-image {
+    position: absolute;
+    right: 558px;
+    top: 410px;
+    width: 380px
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .nav {
+    gap: 20px;
+  }
+
+  .text-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pizza h2 {
+    font-size: 40px;
+  }
+
+  #pizza p {
+    font-size: 19px;
+  }
+
+  .pizza-image {
+    width: 450px;
+  }
+
+  .pizza-slice-image {
+    position: absolute;
+    right: 400px;
+    top: 265px;
+    width: 270px;
+  }
+
+  #subscribe form {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .leafs-image {
+    display: none;
+  }
+
+  .header-content h1{
+    font-size: 70px;
+  }
+
+  #moreinfo h2{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #pizza h2 {
+    font-size: 37px;
+}
+
+.pizza-slice-image {
+  position: absolute;
+  right: 300px;
+  top: 208px;
+  width: 270px;
+}
+
+#subscribe form {
+  max-width: 400px;
+}
+
+  .footer-content {
+    gap: 40px;
+    text-align: center;
+    flex-direction: column;
+}
+
+  .footer-icons {
+    justify-content: center;
+}
+
+  .footer-item-title {
+    flex: 4 1 auto;
+  }
+}
