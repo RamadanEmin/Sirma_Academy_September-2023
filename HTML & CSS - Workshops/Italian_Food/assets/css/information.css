@@ -1,0 +1,53 @@
+#information {
+  overflow: hidden;
+}
+
+#information p {
+  font-size: 19px;
+  line-height: 25px;
+  color: #333d42;
+  font-weight: 400;
+  font-family: "Open Sans";
+  max-width: 332px;
+  padding-bottom: 110px;
+}
+
+#information h4 {
+  font-size: 42px;
+  line-height: 33px;
+  color: #393939;
+  font-family: "Reey";
+  margin-left: 21px;
+  margin-bottom: 34px;
+}
+
+#information h5 {
+  max-width: 774px;
+  font-size: 25px;
+  color: #3f3f3f;
+  font-weight: 600;
+  font-family: "Open Sans";
+  text-align: center;
+  flex: 1 1 100%;
+  margin: 94px auto 6px auto;
+  line-height: 30px;
+}
+
+#information h6 {
+  color: #3f3f3f;
+  font-weight: 700;
+  font-family: "Open Sans";
+  text-align: center;
+  flex: 1 1 100%;
+  margin: 52px auto 72px auto;
+  margin-bottom: 139px;
+  font-size: 21px;
+}
+
+.information-container {
+  margin-top: 127px;
+  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
