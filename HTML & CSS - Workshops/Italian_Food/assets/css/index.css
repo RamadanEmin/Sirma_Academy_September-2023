@@ -2,6 +2,7 @@
 @import url("./header.css");
 @import url("./items.css");
 @import url("./moreinfo.css");
+@import url("./discount.css");
 
 body {
   overflow-x: hidden;
