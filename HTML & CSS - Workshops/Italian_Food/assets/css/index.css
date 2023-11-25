@@ -5,6 +5,7 @@
 @import url("./discount.css");
 @import url("./pizza.css");
 @import url("./information.css");
+@import url("./subscribe.css");
 
 body {
   overflow-x: hidden;
