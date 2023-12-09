@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+.upload {
+  margin-top: 20px;
+}
+
+.select-file {
+  margin-top: 30px;
+  font-size: 30px;
+  color: rgb(80, 142, 196);
+}

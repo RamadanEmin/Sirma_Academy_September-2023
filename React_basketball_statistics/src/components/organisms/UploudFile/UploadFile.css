@@ -1,0 +1,26 @@
+.file-loader {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  border: 2px solid rgb(80, 142, 196);
+  border-radius: 5px;
+  color: rgb(80, 142, 196);
+  background-color: #fff;
+  transition: .3s ease-in-out;
+}
+
+.file-loader:hover {
+  border-color: #fff;
+  color: #fff;
+  background-color: rgb(80, 142, 196);
+}
+
+.file-loader input {
+  display: none;
+}
