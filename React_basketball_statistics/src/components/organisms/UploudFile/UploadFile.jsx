@@ -1,6 +1,11 @@
+import { useContext } from 'react';
+import { transformStringToArray, transformArrayToMatrix } from '../../../utils/transformData';
+import { dataContext } from '../../../contexts/dataContext';
+
 import './UploadFile.css';
 
 function UploadFile({ className }) {
+    const { setData } = useContext(dataContext);
 
     function handleFileUpload(e) {
         e.preventDefault();
@@ -8,7 +13,13 @@ function UploadFile({ className }) {
         const file = e.target.files[0];
         const reader = new FileReader();
         reader.readAsText(file);
-        reader.onload = () => {     
+        reader.onload = () => {
+            const arr = transformStringToArray(reader.result);
+            console.log(arr);
+            const matrix = transformArrayToMatrix(arr);
+            console.log(matrix);
+
+            setData(matrix);
         };
     }
 

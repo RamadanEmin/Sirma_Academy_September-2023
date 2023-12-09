@@ -1,0 +1,16 @@
+Luka Doncic, Dallas Mavericks, 320, 40
+Joel Embid, Philadelphia 76ers, 380, 50
+Kevin Durant, Phoenix Suns, 390, 31
+Tyrese Maxey, Philadelphia 76ers, 380, 26
+Tim Hardaway Jr., Dallas Mavericks, 220, 17
+Lebron James, Los Angeles Lakers, 230, 30
+Eric Gordon, Phoenix Suns, 350, 7
+Luka Doncic, Dallas Mavericks, 460, 36
+Anthony Davis, Los Angeles Lakers, 310, 16
+Tim Hardaway Jr., Dallas Mavericks, 220, 11
+Kevin Durant, Phoenix Suns, 330, 27
+Eric Gordon, Phoenix Suns, 330, 16
+Tyrese Maxey, Philadelphia 76ers, 380, 33
+Joel Embid, Philadelphia 76ers, 310, 30
+Lebron James, Los Angeles Lakers, 400, 31
+Anthony Davis, Los Angeles Lakers, 390, 27
