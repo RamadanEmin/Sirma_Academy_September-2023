@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
+import ContextProvider from './contexts/dataContext';
 import UnsortedTable from './components/templates/UnsortedTable';
 import MostPointsScoredInOneGameTable from './components/templates/MostPointsScoredInOneGameTable';
 import MostPointsScoredInAllGamesTable from './components/templates/MostPointsScoredInAllGamesTable';
@@ -19,7 +20,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <HomePage />,
+        element: <HomePage />, 
     },
     {
         path: '/table',
@@ -54,7 +55,9 @@ const router = createBrowserRouter([
 ]);
 
 root.render(
-    <RouterProvider router={router}>
-        <App />
-    </RouterProvider>
+    <ContextProvider>
+        <RouterProvider router={router}>
+            <App />
+        </RouterProvider>
+    </ContextProvider>
 );
