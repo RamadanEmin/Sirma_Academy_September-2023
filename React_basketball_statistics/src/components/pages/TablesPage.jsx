@@ -1,7 +1,11 @@
+import { Outlet } from 'react-router-dom';
+import Navigation from '../organisms/Navigation/Navigation';
+
 const TablesPage = () => {
     return (
         <div className="App">
-            <h1>Table Page</h1>
+            <Navigation />
+            <Outlet />
         </div>
     );
 };
