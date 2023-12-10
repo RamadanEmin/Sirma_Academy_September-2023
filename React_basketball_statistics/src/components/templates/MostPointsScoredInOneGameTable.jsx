@@ -9,7 +9,9 @@ function MostPointsScoredInOneGameTable() {
         <>
             {sortedData ? (
                 <Table
+                    columns={['Player name', 'Team', 'Time played(s)', 'Points scored']}
                     data={data}
+                    sorted
                 />
             ) : null}
         </>
