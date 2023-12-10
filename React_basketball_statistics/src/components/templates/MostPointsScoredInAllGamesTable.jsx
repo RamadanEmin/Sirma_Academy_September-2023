@@ -1,9 +1,23 @@
+import { useContext } from 'react';
+import { dataContext } from '../../contexts/dataContext';
+import Table from '../organisms/Table/Table';
+import { mostPointScoredPlayerSorting } from '../../utils/sorting';
+
 function MostPointsScoredInAllGamesTable() {
+    const { data } = useContext(dataContext);
+
+    let sortedData = mostPointScoredPlayerSorting(data);
 
     return (
-        <div>
-            <h1>Table for most scored points in all games</h1>
-        </div >
+        <>
+            {sortedData ? (
+                <Table
+                    columns={['Player name', 'Points Scored']}
+                    data={sortedData}
+                    sorted
+                />
+            ) : null}
+        </>
     );
 }
 
