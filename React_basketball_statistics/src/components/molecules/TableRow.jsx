@@ -1,3 +1,4 @@
+import TableCell from '../atoms/TableCell';
 import { nanoid } from 'nanoid';
 
 const TableRow = ({ row, sorted, index, thead }) => {
@@ -9,7 +10,7 @@ const TableRow = ({ row, sorted, index, thead }) => {
                 sorted && <td>{index + 1}.</td>
             )}
             {row.map((cell) => (
-                <TableCell key={nanoid()}/>
+                <TableCell key={nanoid()} cell={cell} thead={thead}/>
             ))}
             
         </tr>
