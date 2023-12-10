@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { transformStringToArray, transformArrayToMatrix } from '../../../utils/transformData';
 import { dataContext } from '../../../contexts/dataContext';
+import { checkForValidData } from '../../../utils/validation';
 
 import './UploadFile.css';
 
@@ -15,9 +16,8 @@ function UploadFile({ className }) {
         reader.readAsText(file);
         reader.onload = () => {
             const arr = transformStringToArray(reader.result);
-            console.log(arr);
             const matrix = transformArrayToMatrix(arr);
-            console.log(matrix);
+            checkForValidData(matrix);
 
             setData(matrix);
         };

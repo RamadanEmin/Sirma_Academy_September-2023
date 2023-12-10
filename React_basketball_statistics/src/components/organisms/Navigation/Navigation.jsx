@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 
 import './Navigation.css';
+import UploadFile from '../UploudFile/UploadFile';
 
 function Navigation() {
 
@@ -13,6 +14,7 @@ function Navigation() {
                 <li><NavLink to={'/table/points-in-time'}>Player points in time per sec</NavLink></li>
                 <li><NavLink to={'/table/points-per-team'}>Team points</NavLink></li>
                 <li><NavLink to={'/table/best-player-in-the-team'}>Best player in team</NavLink></li>
+                <li><UploadFile/></li>
             </ul>
         </nav>
     );
