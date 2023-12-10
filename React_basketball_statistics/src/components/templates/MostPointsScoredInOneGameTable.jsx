@@ -1,9 +1,18 @@
+import { useContext } from 'react';
+import { dataContext } from '../../contexts/dataContext';
+import Table from '../organisms/Table/Table';
+
 function MostPointsScoredInOneGameTable() {
+    const { data } = useContext(dataContext);
 
     return (
-        <div>
-            <h1>Table for most scored points in one games</h1>
-        </div>
+        <>
+            {sortedData ? (
+                <Table
+                    data={data}
+                />
+            ) : null}
+        </>
     );
 }
 
