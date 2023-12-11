@@ -47,8 +47,30 @@ function bestPlayerScoreSrotingByTime(data) {
     return sortedData;
 }
 
+function teamSorting(data) {
+    let sortedData;
+    if (data.length > 0) {
+        const teamsPoints = data.reduce((acc, cur) => {
+            const [, team, , points] = cur;
+            if (acc[team]) {
+                acc[team] = acc[team] + +points;
+            } else {
+                acc[team] = +points;
+            }
+
+            return acc;
+        }, {});
+
+        sortedData = Object.entries(teamsPoints)
+            .sort((a, b) => b[1] - a[1]);
+    }
+
+    return sortedData;
+}
+
 export {
     playerPointScoreInOneGameSorting,
     mostPointScoredPlayerSorting,
     bestPlayerScoreSrotingByTime,
+    teamSorting,
 };
