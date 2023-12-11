@@ -68,9 +68,43 @@ function teamSorting(data) {
     return sortedData;
 }
 
+function bestPlayerSorting(data) {
+    let sortedData;
+    if (data.length > 0) {
+        const teams = {};
+
+        data.forEach(row => {
+            if (!teams[row[1]]) {
+                teams[row[1]] = {
+                    [row[0]]: Number(row[3]),
+                };
+            } else {
+                if (!teams[row[1]][row[0]]) {
+                    teams[row[1]][row[0]] = Number(row[3]);
+                } else {
+                    teams[row[1]][row[0]] += Number(row[3]);
+                }
+            }
+        });
+
+        const bestPlayers = [];
+        for (let key in teams) {
+            teams[key] = Object.entries(teams[key]).sort((a, b) => b[1] - a[1]);
+            bestPlayers.push([key, teams[key][0][0], teams[key][0][1]]);
+        }
+
+        bestPlayers.sort((a, b) => b[2] - a[2]);
+
+        sortedData = bestPlayers;
+
+        return sortedData;
+    }
+}
+
 export {
     playerPointScoreInOneGameSorting,
     mostPointScoredPlayerSorting,
     bestPlayerScoreSrotingByTime,
     teamSorting,
+    bestPlayerSorting
 };
