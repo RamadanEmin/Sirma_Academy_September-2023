@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom';
+import LoadMore from '../organisms/LoadMore/LoadMore';
 import Navigation from '../organisms/Navigation/Navigation';
 
 const TablesPage = () => {
@@ -6,6 +7,7 @@ const TablesPage = () => {
         <div className="App">
             <Navigation />
             <Outlet />
+            <LoadMore />
         </div>
     );
 };
