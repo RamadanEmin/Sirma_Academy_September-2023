@@ -1,10 +1,15 @@
+import { useState } from 'react';
 import { useSite } from '../../../contexts/dataContext';
 import { prepareData } from '../../../utils/transformData';
+import spinner from '../../../assets/spinner.json';
+import Lottie from 'lottie-react';
 
 const LoadMore = () => {
     const { data, setData, activePage, setActivePage } = useSite();
+    const [loading, setLoading] = useState(false);
 
     const fetchData = () => {
+        setLoading(true);
         setActivePage(activePage + 1);
         fetch(`/api/v1/stats?page=${activePage + 1}`)
             .then((response) => response.json())
@@ -18,6 +23,7 @@ const LoadMore = () => {
                 }
 
                 setData([...data, ...newData]);
+                setLoading(false);
             });
     };
 
@@ -27,10 +33,23 @@ const LoadMore = () => {
 
     return <button
         style={{ marginBottom: 50 }} onClick={() => {
-            fetchData();
+            if (!loading) {
+                fetchData();
+            }
         }}>
-        <i className="fa-solid fa-rotate-right"></i>
-        Load More
+
+        {loading ?
+            <>
+                <Lottie animationData={spinner} loop={true} style={{ width: 30, height: 30 }} autoplay={true} />
+                Loading...
+            </>
+
+            :
+            <>
+                <i className="fa-solid fa-rotate-right"></i>
+                Load More
+            </>
+        }
     </button>;
 };
 
