@@ -1,21 +1,53 @@
 import { NavLink } from 'react-router-dom';
+import FetchFromWeb from '../FetchFromWeb/FetchFromWeb';
+import UploadFile from '../UploudFile/UploadFile';
 
 import './Navigation.css';
-import UploadFile from '../UploudFile/UploadFile';
+
+const routes =  [
+    {
+        title: 'Unsorted',
+        path: '/table/unsorted'
+    },
+    {
+        title: 'Player points in game',
+        path: '/table/points-in-one-game'
+    },
+    {
+        title: 'Player points in all games',
+        path: '/table/points-in-all-game'
+    },
+    {
+        title: 'Player points in time per sec',
+        path: '/table/points-in-time'
+    },
+    {
+        title: 'Team points',
+        path: '/table/points-per-team'
+    },
+    {
+        title: 'Best player in team',
+        path: '/table/best-player-in-the-team'
+    }
+];
 
 function Navigation() {
 
     return (
         <nav className='navigation'>
             <ul>
-                <li><NavLink to={'/table/unsorted'}>Unsorted</NavLink></li>
-                <li><NavLink to={'/table/points-in-one-game'}>Player points in game</NavLink></li>
-                <li><NavLink to={'/table/points-in-all-game'}>Player points in all games</NavLink></li>
-                <li><NavLink to={'/table/points-in-time'}>Player points in time per sec</NavLink></li>
-                <li><NavLink to={'/table/points-per-team'}>Team points</NavLink></li>
-                <li><NavLink to={'/table/best-player-in-the-team'}>Best player in team</NavLink></li>
-                <li><UploadFile/></li>
+                {routes.map((route, index) => (
+                    <li key={index}>
+                        <NavLink to={route.path} active='active' exact={'true'}>
+                            {route.title}
+                        </NavLink>
+                    </li>
+                ))}
             </ul>
+                <div>
+                <UploadFile/>
+                <FetchFromWeb />
+                </div>
         </nav>
     );
 }

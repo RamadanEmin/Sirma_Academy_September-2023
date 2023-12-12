@@ -15,18 +15,20 @@ function transformArrayToMatrix(arr) {
 
 const prepareData = raw => {
     if (!raw) return false;
-    const arr = []
-    const { data } = raw
+    const arr = [];
+    const { data } = raw;
 
     for (let i = 0; i < data.length; i++) {
         data[i].min = parseInt(data[i].min)
 
-        arr.push({
-            "Player name": data[i].player.first_name + " " + data[i].player.last_name,
-            "Team": data[i].team.full_name,
-            "Time played(s)": data[i].min * 60,
-            "Points scored": data[i].pts,
-        });
+        if (isCorrectData(data[i])) {
+            arr.push({
+                "Player name": data[i].player.first_name + " " + data[i].player.last_name,
+                "Team": data[i].team.full_name,
+                "Time played(s)": data[i].min * 60,
+                "Points scored": data[i].pts,
+            });
+        }
     }
 
     return arr;
@@ -37,5 +39,3 @@ export {
     transformStringToArray,
     transformArrayToMatrix
 };
-
-

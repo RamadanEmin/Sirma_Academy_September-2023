@@ -10,8 +10,8 @@ const FetchFromWeb = () => {
     const fetchData = useCallback(() => {
         fetch(`/api/v1/stats?page=${activePage}`)
             .then((response) => response.json())
-            .then((newData) => {
-                const preparedData = prepareData(newData);
+            .then((fetchData) => {
+                const preparedData = prepareData(fetchData);
                 const newData = preparedData.map((player) => Object.values(player));
                 if (preparedData.length === 0) {
                     alert('No data to fetch');

@@ -1,4 +1,4 @@
-function checkForValidData(data) {
+function checkForValidData(data){
     data.forEach((row, index) => {
 
         if (row.length !== 4) {
@@ -13,6 +13,13 @@ function checkForValidData(data) {
     });
 }
 
-const validFileFormats = ["csv", "json", "txt"]
+const isCorrectData = item => {
+    if(item?.player?.first_name && item?.player?.last_name && item?.team.full_name && item.min && item.min > 0 && item.pts){
+        return true;
+    }
+        return false
+}
 
-export { checkForValidData, validFileFormats };
+const validFileFormats = ["csv", "json","txt"]
+
+export {checkForValidData, validFileFormats,isCorrectData};
