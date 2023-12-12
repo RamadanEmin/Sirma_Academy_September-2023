@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { transformStringToArray, transformArrayToMatrix } from '../../../utils/transformData';
 import { dataContext } from '../../../contexts/dataContext';
-import { checkForValidData, validFileFormats } from '../../../utils/validation';
+import {checkForValidData, validFileFormats} from '../../../utils/validation';
 
 import './UploadFile.css';
 
@@ -23,13 +23,18 @@ function UploadFile({ className }) {
                     return
                 }
 
-                if (fileFormat === "json") {
-                    const parsedData = JSON.parse(reader.result);
 
-                    const newData = parsedData.map((player) => Object.values(player))
-                    setData(newData);
-                    return
-                }
+
+if (fileFormat === "json") {
+    const parsedData = JSON.parse(reader.result);
+
+    const newData = parsedData.map((player) => Object.values(player))
+
+
+    setData(newData);
+    return
+}
+
 
                 checkForValidData(matrix);
                 setData(matrix);
@@ -38,11 +43,12 @@ function UploadFile({ className }) {
                 reader.abort()
             };
         } catch (error) {
-            if (!e.target.files[0]) {
+            if (!e.target.files[0]){
                 alert("No file selected");
                 return
             }
         }
+
     }
 
     return (

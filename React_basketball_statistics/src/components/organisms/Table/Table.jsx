@@ -1,9 +1,11 @@
 import { nanoid } from 'nanoid';
-import './Table.css';
 import TableRow from '../../molecules/TableRow';
+
+import './Table.css';
 
 function Table({ columns, data, sorted }) {
     return (
+
         <table className='table'>
             <thead>
                 <TableRow key={nanoid()} row={columns} sorted={sorted} thead={true} />
@@ -14,6 +16,7 @@ function Table({ columns, data, sorted }) {
                 ))}
             </tbody>
         </table>
+
     );
 }
 
