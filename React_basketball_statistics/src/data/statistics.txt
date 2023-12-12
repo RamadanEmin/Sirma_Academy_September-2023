@@ -14,3 +14,4 @@ Tyrese Maxey, Philadelphia 76ers, 380, 33
 Joel Embid, Philadelphia 76ers, 310, 30
 Lebron James, Los Angeles Lakers, 400, 31
 Anthony Davis, Los Angeles Lakers, 390, 27
+

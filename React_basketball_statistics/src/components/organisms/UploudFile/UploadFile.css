@@ -13,6 +13,7 @@
   color: rgb(80, 142, 196);
   background-color: #fff;
   transition: .3s ease-in-out;
+  margin: 20px auto;
 }
 
 .file-loader:hover {

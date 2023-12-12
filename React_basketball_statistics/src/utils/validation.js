@@ -1,5 +1,6 @@
-function checkForValidData(data){
+function checkForValidData(data) {
     data.forEach((row, index) => {
+
         if (row.length !== 4) {
             alert(`Invalid data on line ${index + 1}`);
         }
@@ -12,4 +13,6 @@ function checkForValidData(data){
     });
 }
 
-export {checkForValidData};
+const validFileFormats = ["csv", "json", "txt"]
+
+export { checkForValidData, validFileFormats };
